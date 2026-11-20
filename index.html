@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyro Frost – Polityka Prywatności / Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #1e293b;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    h1 { color: #38bdf8; margin-top: 0; font-size: 24px; }
+    h2 { color: #38bdf8; font-size: 18px; margin-top: 24px; border-bottom: 1px solid #334155; padding-bottom: 6px; }
+    p, li { font-size: 15px; color: #cbd5e1; }
+    .lang-switch { display: flex; gap: 10px; margin-bottom: 20px; }
+    .lang-btn {
+      background: #0284c7; color: #fff; border: none; padding: 8px 14px;
+      border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 14px;
+    }
+    .lang-btn.inactive { background: #334155; color: #94a3b8; }
+    .footer { margin-top: 30px; font-size: 13px; color: #94a3b8; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <button id="btn-pl" class="lang-btn" onclick="showLang('pl')">🇵🇱 Polski</button>
+      <button id="btn-en" class="lang-btn inactive" onclick="showLang('en')">🇬🇧 English</button>
+    </div>
+
+    <div id="sec-pl">
+      <h1>Pyro Frost – Polityka Prywatności i Regulamin</h1>
+      <p><strong>Ostatnia aktualizacja:</strong> Listopad 2026</p>
+
+      <h2>1. Polityka Prywatności (Privacy Policy)</h2>
+      <p>Aplikacja mobilna <strong>Pyro Frost</strong> jest płatną grą logiczną bez reklam. Szanujemy prywatność użytkowników i nie zbieramy wrażliwych danych osobowych (takich jak imię i nazwisko, adres zamieszkania, lokalizacja GPS, kontakty czy identyfikatory reklamowe urządzenia).</p>
+      <ul>
+        <li><strong>Pamięć lokalna urządzenia:</strong> Postępy gry, statystyki wygranych, historia ukończonych poziomów, wybrany nick oraz ustawienia języka i motywu są zapisywane lokalnie w pamięci urządzenia (<code>localStorage</code>). Użytkownik może je usunąć w dowolnym momencie w menu gry („Usuń dane lokalne”) lub poprzez odinstalowanie aplikacji.</li>
+        <li><strong>Publiczny Ranking Wyzwania Dnia:</strong> Jeśli użytkownik dobrowolnie wyśle swój wynik po ukończeniu Wyzwania Dnia, podany nick (do 15 znaków), liczba ruchów oraz czas ukończenia są przesyłane szyfrowanym połączeniem (HTTPS) do bazy danych Supabase w celu wyświetlenia dziennej tabeli wyników Top 10.</li>
+        <li><strong>Usuwanie danych z serwera i kontakt:</strong> W celu usunięcia swojego wpisu z publicznego rankingu przed jego automatycznym odświeżeniem kolejnego dnia, prosimy o kontakt z administratorem pod adresem e-mail: <strong>pyrofrostgame@gmail.com</strong>.</li>
+      </ul>
+
+      <h2>2. Regulamin (Terms of Service)</h2>
+      <ul>
+        <li><strong>Zasady korzystania:</strong> Aplikacja udostępniana jest płatnie do użytku osobistego. Zabrania się publikowania w rankingu wulgarnych, obraźliwych lub niezgodnych z prawem nazw użytkownika (wpisy takie będą usuwane przez administratora).</li>
+        <li><strong>Własność intelektualna:</strong> Kod źródłowy, mechanika oraz oprawa graficzna gry są chronione prawem autorskim. Zabrania się kopiowania i rozpowszechniania aplikacji bez zgody autora.</li>
+        <li><strong>Wyłączenie odpowiedzialności:</strong> Aplikacja dostarczana jest w stanie „takim, jaki jest” (AS IS), bez gwarancji zachowania lokalnych postępów po wyczyszczeniu pamięci aplikacji.</li>
+      </ul>
+    </div>
+
+    <div id="sec-en" style="display:none;">
+      <h1>Pyro Frost – Privacy Policy &amp; Terms of Service</h1>
+      <p><strong>Last updated:</strong> November 2026</p>
+
+      <h2>1. Privacy Policy</h2>
+      <p><strong>Pyro Frost</strong> is a paid puzzle mobile application with no advertisements. We respect your privacy and do not collect sensitive personal data (such as your real name, physical address, GPS location, contacts, or advertising IDs).</p>
+      <ul>
+        <li><strong>Local Device Storage:</strong> Game progress, win statistics, completed level history, saved nickname, and language/theme settings are stored locally on your device (<code>localStorage</code>). You can delete this data anytime inside the app ("Delete Local Data") or by uninstalling the application.</li>
+        <li><strong>Public Daily Leaderboard:</strong> If you voluntarily submit your score after completing the Daily Challenge, your chosen nickname (up to 15 characters), move count, and completion time are transmitted via encrypted HTTPS to our Supabase database to display the daily Top 10 leaderboard.</li>
+        <li><strong>Data Deletion &amp; Contact:</strong> To request removal of your nickname and score from the public leaderboard, please contact the developer at: <strong>pyrofrostgame@gmail.com</strong>.</li>
+      </ul>
+
+      <h2>2. Terms of Service</h2>
+      <ul>
+        <li><strong>Fair Play &amp; Use:</strong> This application is provided as a paid product for entertainment purposes. Offensive, vulgar, or inappropriate nicknames in the leaderboard are strictly prohibited and will be removed.</li>
+        <li><strong>Intellectual Property:</strong> The source code, game design, and assets are protected by copyright. Copying or redistributing the application without permission is prohibited.</li>
+        <li><strong>Disclaimer:</strong> The application is provided "AS IS" without warranties of any kind. We are not responsible for loss of local progress caused by clearing app data.</li>
+      </ul>
+    </div>
+
+    <div class="footer">Pyro Frost &copy; 2026</div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('sec-pl').style.display = (lang === 'pl') ? 'block' : 'none';
+      document.getElementById('sec-en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('btn-pl').className = (lang === 'pl') ? 'lang-btn' : 'lang-btn inactive';
+      document.getElementById('btn-en').className = (lang === 'en') ? 'lang-btn' : 'lang-btn inactive';
+    }
+  </script>
+</body>
+</html>
